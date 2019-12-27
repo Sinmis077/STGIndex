@@ -1,7 +1,9 @@
+/* Main Font Families and the main text color for the website */
 * { 
  font-family: Arial, Helvetica, sans-serif;
  color:white;
 }
+/* Main Part of the css starts here */
 body {
 	max-height:10000px;
 	max-width:2500px;
@@ -11,17 +13,40 @@ body {
 	width:auto;
 	background-color:#1B1B1B;
 }
-header {
+thead {
 	background-color:#333;
-	padding: 4px 16px;
+	display:block;
+	margin:0;
+	padding: 0px;
+}		
+tbody {
 	display:inline-block;
 }
-header a {
+tfoot {
+	display:inline-block;
+}
+/*This is where the th family color tree starts */
+th {
+	padding-left:10px;
+}
+thead th a {
 	font-size:17px;
 	text-decoration:none;
 	display:block;
-	padding: 8px 12px;
+	padding:12px 16px;
 }
-header a.active {
+a.active {
 	background-color:#160d8e;
+}	
+th a.active:hover {
+	font-size:20px;
 }
+th a:not(.active):hover {
+	font-size:20px;
+	background-color:#ddd;
+	color:black;
+}
+th a:is(:lastchild) {
+	padding-right:10px;
+}
+/* This is where the th family color tree ends */
