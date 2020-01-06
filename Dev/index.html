@@ -4,25 +4,29 @@ This is the beginning of index.html
 -->
 <html>
 	<head>
-		<title>Home</title>
-		<link href="css/main.css" rel="stylesheet" />
+		<title>STG Network | Home</title>
+		<link id="stylesheetid" href="css/dark.css" rel="stylesheet" />
 		<meta charset="UTF-8">
+		<script src="js/css.js"></script>
 	</head>
 	<body>
+		<div>
 		<table>
 		<!-- This is the start of the head of the page and also its navigation -->
-		<thead cellpadding="10">
+		<thead>
 			<th><h1>STG Network</h1></th>
-			<th><a href="index.html" class="active">Home</a></th>
+			<th class="active"><a href="index.html">Home</a></th>
 			<th><a href="">Modpacks</a></th>
-			<th><a href="">Partners</a></th>
-			<th><a style="display:none;" href="">Outside Minecraft</a></th>
+			<th style="display:none; padding:0; margin:0;"><a href="">Partners</a></th>
+			<th style="display:none; padding:0; margin:0;"><a href="">Outside Minecraft</a></th>
 			<th><a href="">About Us</a></th>
+			<th style="display:none; padding:0; margin:0;"><a id="TCB" onclick="ChangeCSS('css/light.css')" name="Dark Theme">Dark Theme</a></th>
 		<thead>
 		<!-- This is the end of the head of the page and also its navigation -->
 		<!-- This is the start of the main body of the page -->
 		<tbody>
-			<td><p> Hi there suffering world </p></td>
+			<!-- <td><p> Hi there suffering world </p></td> -->
+			
 		</tbody>
 		<!-- This is the end of the main body of the page -->
 		<!-- this is the start of the footer of the page -->
