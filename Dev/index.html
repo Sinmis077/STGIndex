@@ -4,37 +4,41 @@ This is the beginning of index.html
 -->
 <html>
 	<head>
-		<title>STG Network | Home</title>
+		<title>WTG Network | Home</title>
 		<link id="stylesheetid" href="css/dark.css" rel="stylesheet" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 		<meta charset="UTF-8">
 		<script src="js/css.js"></script>
 	</head>
 	<body>
-		<div>
-		<table>
 		<!-- This is the start of the head of the page and also its navigation -->
-		<thead>
-			<th><h1>STG Network</h1></th>
-			<th class="active"><a href="index.html">Home</a></th>
-			<th><a href="">Modpacks</a></th>
-			<th style="display:none; padding:0; margin:0;"><a href="">Partners</a></th>
-			<th style="display:none; padding:0; margin:0;"><a href="">Outside Minecraft</a></th>
-			<th><a href="">About Us</a></th>
-			<th style="display:none; padding:0; margin:0;"><a id="TCB" onclick="ChangeCSS('css/light.css')" name="Dark Theme">Dark Theme</a></th>
-		<thead>
+		<header>
+		<div class="topnav" id="myTopnav">
+			<h1>STG Network</h1>
+			<div class="navigation">
+			<a class="active" href="index.html">Home</a>
+			<a href="">Modpacks</a>
+			<a style="display:none; padding:0; margin:0;" href="">Partners</a>
+			<a style="display:none; padding:0; margin:0;" href="">Outside Minecraft</a>
+			<a href="">About Us</a>
+			<a style="display:none; padding:0; margin:0;" id="TCB" onclick="ChangeCSS('css/light.css')" name="Dark Theme">Dark Theme</a>
+			<a href="javascript:void(0);" id="icon" onclick="myNav(0)">
+				<i class="fa fa-bars"></i>
+			</a>	
+			</div>
+		</div>
+		</header>
 		<!-- This is the end of the head of the page and also its navigation -->
 		<!-- This is the start of the main body of the page -->
-		<tbody>
+		<main>
 			<!-- <td><p> Hi there suffering world </p></td> -->
 			
-		</tbody>
+		</main>
 		<!-- This is the end of the main body of the page -->
 		<!-- this is the start of the footer of the page -->
-		<tfoot>
-			<tr>
-				<td><div class="foottran"><p><b>©</b>STG Network, All rights reserved.</p><div></td>
-			</tr>
-		</tfoot>
+		<footer>
+			<div><p><b>©</b>WTG Network, All rights reserved.</p></div>
+		</footer>
 		<!-- this is the end of the footer of the page and the entire webpage -->
 		</table>
 	</body>
