@@ -99,11 +99,11 @@ header hr {
 	border-radius:7px;
 }
 header hr.hrright {
-	animation: hrrightanim 5s ease;
+	animation: hrrightanim 3s ease;
 	margin-left:50.7%;
 }
 header hr.hrleft {
-	animation: hrleftanim 5s ease;
+	animation: hrleftanim 3s ease;
 	margin-right:50.7%;
 }
 @keyframes hrrightanim {
