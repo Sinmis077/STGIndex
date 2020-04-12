@@ -1,20 +1,15 @@
-/* function ChangeCSS(sheet) {
-	document.getElementById('stylesheetid').setAttribute('href', sheet);
-	if (sheet == 'dark.css') {
-		document.getElementById('TCB').setAttribute('name', "Dark Theme");
-		document.getElementById('TCB').setAttribute('onclick', 'ChangeCSS("css/light.css")')
-	}
-	else {
-		document.getElementById('TCB').setAttribute('name', 'Light Theme');
-		document.getElementById('TCB').setAttribute('onclick', 'ChangeCSS("css/dark.css")');
-	}
-} */
 function myNav() {
         var nav = document.getElementById("myTopnav");
+		var header = document.getElementById("headerClass");
+		var active = document.getElementById("activea");
         if (nav.className === "topnav") {
             nav.className += " responsive";
+			header.className += " responsive";
+			active.className += " responsive";
         } else {
             nav.className = "topnav";
-        }
+			header.className = "headerclass";
+			active.className += "active"
+		}
 
 }
